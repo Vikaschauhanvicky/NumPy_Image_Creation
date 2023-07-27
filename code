@@ -1,0 +1,14 @@
+
+import numpy as np
+import cv2
+
+# Step 1: Define the size of the image
+image_size = (100, 100)  # 100 x 100 pixels
+
+# Step 2: Create an array of random values in the range [0, 255]
+random_image = np.random.randint(0, 256, size=image_size, dtype=np.uint8)
+
+# Step 3: Display the image using OpenCV
+cv2.imshow("Creative Grayscale Image", random_image)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
